@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project</title>
+	<style type="text/css">
+body{
+	background-image: url(vector1.jpg);
+}
+
+header{
+	background-color: #111;
+	margin: -10px;
+	padding: 1px;
+	margin-bottom: 100px;
+	padding-bottom: -10px;
+}
+
+h2{
+	color: white;
+	justify-content: center;
+	margin-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.project-card{
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 5px 5px 20px orangered;
+	background-color: #111;
+	width: 15px 0%;
+	max-width: 350px;
+	margin: 25px;
+	margin-top: 10px;
+	padding: 10px;
+
+}
+
+.project-card img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.project-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.view-btn{
+	background-color: orangered;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: 10px auto;
+	display: block;
+	cursor: pointer;
+}
+
+.view-btn:hover{
+	background-color: black;
+}
+
+.project-card {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  display: inline-block;
+}
+
+.project-card:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: orangered;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+  </style>
+</head>
+<body>
+			<header>
+				<h2>PG W<span style="color: orangered;">ebworks</span></h2>
+			</header>
+			<h3 style="color: orangered; text-align: center; font-size: 30px; margin-bottom: 10px;">List of My Projects</h3><br><br><br>
+			<div class="project-container">
+				<div class="project-card">
+					<img src="project1.jpg"/>
+					<button class="view-btn"><a href="project1.html">View Project</a></button>
+			</div>
+
+			<div class="project-container">
+				<div class="project-card">
+					<img src="project2.jpg"/>
+					<button class="view-btn"><a href="project2.html">View Project</a></button>
+			</div>
+
+			<div class="project-container">
+				<div class="project-card">
+					<img src="project3.jpg"/>
+					<button class="view-btn"><a href="project3.html">View Project</a></button>
+			</div>
+
+
+
+</body>
+</html>

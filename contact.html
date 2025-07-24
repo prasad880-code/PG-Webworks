@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact</title>
+	<style type="text/css">
+body{
+	font-family: sans-serif;
+	background: #111;
+	margin: 30px;
+	padding: 0;
+}
+
+.logo{
+	background-color: #222;
+	color: white;
+    padding: 20px 30px;
+    margin: -30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-container{
+	max-width: 400px;
+	margin: 35px auto;
+	padding: 20px;
+	background: #222;
+	border-radius: 16px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+.contact-container h2{
+	font-size: 32px;
+	margin-bottom: 10px;
+	color: orange;
+}
+
+.contact-container p{
+	color: #ddd;
+	margin: 35px;
+}
+
+.contact-info p{
+	font-size: 16px;
+}
+
+
+
+.contact-btn {
+      margin-top: 20px;
+      background-color: orangered;
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: black;
+    }
+
+.contact-section{
+	background-color: #222;
+	color: #fff;
+	padding: 100px 10px;
+	border-radius: 15px;
+	max-width: auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.contact-section{
+	background-color: #222;
+	color: #fff;
+	padding: 60px 20px 40px 20px;
+	border-radius: 15px;
+	max-width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	box-shadow: 0 0 15px orangered; /* pehle se hi glow effect */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	/* Animation */
+	opacity: 0;
+	transform: scale(0.8);
+	animation: popIn 0.9s ease 0.5s forwards;
+}
+
+.contact-section:hover{
+	transform: scale(1.02);
+	box-shadow: 0 0 25px orangered;
+}
+
+@keyframes popIn{
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: orangered;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+	</style>
+</head>
+<body>
+		<header class="logo">
+			<h2 style="color: white;">PG W<span style="color: orangered;">ebworks</span></h2>
+		</header>
+		<br><br>
+		 <div class="contact-section">
+		<h2>Contact Me</h2>
+		<p>If you have a project or idea in mind, <br>let's work together! I'm just a message away.</p><br><br>
+
+		<div class="contact-info">
+			<p>Company Name: PG Webworks</p>
+			<p>Email ID: prasadgwebdeveloper@gmail.com</p>
+			<p>Location: Nashik, India</p>
+			<p>Working Days: Monday to Saturday 24 Hours Open</p>
+		</div>
+
+		<button class="contact-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdGp69ZDbjJI5Rwpczmw61KzQLNuTSuxrWQ8MS0jFZhPeE-rw/viewform?usp=header">Contact Now</a></button>
+	</div>
+
+	<footer class="footer">
+  <div class="footer-container">
+    <h2 class="footer-title">PG Webworks</h2>
+    <p class="footer-tagline">Web Developer | Freelancer | Designer</p>
+    <p class="footer-copy">&copy; 2025 PG Webworks All rights reserved.</p>
+  </div>
+</footer>
+	
+</body>
+</html>

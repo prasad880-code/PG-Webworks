@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		*{
+	margin: 30;
+	padding: 0;
+	box-sizing: border-box;
+	font-display: Arial, sans-serif;
+}
+
+body{
+	background: radial-gradient(circle at center, #ccc, #666);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 90%;
+	max-width: 800px;
+	background: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-box{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.signin-box, .signup-box{
+	flex: 1;
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+}
+.signin-box{
+	background: #fff;
+}
+
+.signup-box{
+	background: #4b0082;
+	color: white;
+	text-align: center;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.social-icon{
+	display: flex;
+	justify-content: center;
+	margin: 15px 0;
+}
+
+.icon{
+	margin: 0 10px;
+	padding: 10px 15px;
+	background: #eee;
+	border-radius: 50%;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.icon:hover{
+	background-color: #4b0082;
+	color: #fff;
+}
+
+input{
+	margin: 10px 0;
+	padding: 12px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+a{
+	font-size: 0.9rem;
+	color: #666;
+	margin: 10px 0;
+	text-align: left;
+	text-decoration: none;
+}
+
+.btn{
+	padding: 12px;
+	margin-top: 15px;
+	border:  none;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.signin-btn{
+	background: #4b0082;
+	color: white;
+}
+
+.signin-btn:hover{
+	background: #350060;
+}
+
+.signup-btn{
+	background: white;
+	color: #4b0082;
+}
+
+.signup-btn:hover{
+	background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.form-box {
+		flex-direction: column;
+	}
+
+	.signup-box {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 100px;
+	}
+}
+	</style>
+	<title>Animation form</title>
+</head>
+<body>
+			<div class="container">
+				<div class="form-box">
+					<div class="signin-box">
+						<h2>SIGN IN</h2>
+					<div class="social-icons">
+						<span class="icon">G</span>
+						<span class="icon">+</span>
+						<span class="icon">F</span>
+						<span class="icon">IN</span>
+					</div>
+					<p>Or Use Your Valid Email Password</p>
+					<input type="email" name="Email">
+					<input type="password" name="Password">
+					<a href="#">Forget Your Password</a>
+					<button class="btn signin-btn">SIGN IN</button>
+				</div>
+				<div class="signup-box">
+					<h2>Hello, Friend</h2>
+					<p>Register with your personal details to use all of site features</p>
+					<button class="btn signup-btn">SIGN UP
+					</button>
+					
+				</div>
+			</div>
+		</body>
+</body>
+</html>

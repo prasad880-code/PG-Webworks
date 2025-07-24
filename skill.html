@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills Web</title>
+  <style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI' tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+h1{
+  color: orangered;
+  margin-top: -50px;
+  text-align: center;
+}
+
+span{
+  color: orangered;
+}
+
+header {
+      background-color: #111;
+      color: white;
+      padding: 20px 30px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 200px;
+    }
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px; /* gap between icons */
+}
+
+    .skill-card {
+      background-color: cornsilk;
+      width: 130px;
+      border: 3px solid orangered;
+      border-radius: 20px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(255, 102, 0, 0.5);
+    }
+
+    .icon-box {
+      background-color: #2d2d2d;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .icon-box img {
+      width: 80px;
+      height: 80px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover .icon-box img {
+      transform: scale(1.1);
+    }
+
+    .skill-name {
+      margin-top: 8px;
+      color: #111;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* Slide animations */
+    .slide-in-left {
+      animation-name: slideInLeft;
+    }
+
+    .slide-in-right {
+      animation-name: slideInRight;
+    }
+
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .skill-card {
+        width: 100px;
+        padding: 8px;
+      }
+
+      .icon-box img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .skill-name {
+        font-size: 12px;
+      }
+    }
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: orangered;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+  </style>
+</head>
+<body>
+
+<header class="logo">
+  <h2>PG W<span>ebworks</span></h2>
+</header>
+    
+
+<h1>My Skills</h1>
+<br>    <br>    <br>    <br>    <br>  
+  <section class="skills-section">
+    <!-- LEFT 1 -->
+    <div class="skill-card slide-in-left" style="animation-delay: 0.2s;">
+      <div class="icon-box">
+        <img src="html.jpg" alt="HTML">
+      </div>
+      <div class="skill-name">HTML</div>
+    </div>
+
+    <!-- LEFT 2 -->
+    <div class="skill-card slide-in-left" style="animation-delay: 0.2s;">
+      <div class="icon-box">
+        <img src="css3.jpg" alt="CSS">
+      </div>
+      <div class="skill-name">CSS</div>
+    </div>
+
+    <!-- LEFT 3 -->
+    <div class="skill-card slide-in-left" style="animation-delay: 0.5;">
+      <div class="icon-box">
+        <img src="python.jpg" alt="Python">
+      </div>
+      <div class="skill-name">PYTHON</div>
+    </div>
+
+    <!-- RIGHT 1 -->
+    <div class="skill-card slide-in-right" style="animation-delay: 0.5s;">
+      <div class="icon-box">
+        <img src="JS.jpg" alt="JavaScript">
+      </div>
+      <div class="skill-name">JAVASCRIPT</div>
+    </div>
+
+    <!-- RIGHT 2 -->
+    <div class="skill-card slide-in-right" style="animation-delay: 0.2s;">
+      <div class="icon-box">
+        <img src="c++.jpg" alt="C++">
+      </div>
+      <div class="skill-name">C++</div>
+    </div>
+
+    <!-- RIGHT 3 -->
+    <div class="skill-card slide-in-right" style="animation-delay: 0.2s;">
+      <div class="icon-box">
+        <img src="g1.png" alt="Graphics D.">
+      </div>
+      <div class="skill-name">Graphics D.</div>
+    </div>
+  </section>
+
+<br>  <br>
+  <footer class="footer">
+  <div class="footer-container">
+    <h2 class="footer-title">PG Webworks</h2>
+    <p class="footer-tagline">Web Developer | Freelancer | Designer</p>
+    <p class="footer-copy">&copy; 2025 PG Webworks All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

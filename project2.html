@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luxury Hotel</title>
+	<style type="text/css">
+		* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+ul a{
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 10px;
+	font-weight: 500;
+	justify-content: space-between;
+}
+
+ul a:hover{
+	color: gold;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.btn {
+  background: #e2b714;
+  color: #000;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+  background: #fff;
+}
+
+.rooms {
+  background: #f1f1f1;
+}
+
+.room-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.book-btn{
+	background-color: #111;
+      color: white;
+      padding: 12px;
+      margin: 0;
+      border: purple;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+.book-btn:hover{
+			background-color: darkred;
+			box-shadow: 2px goldx`x;
+}
+
+.room img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.room h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.contact {
+  background: #fff;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+	</style>
+</head>
+<body>
+				<header class="hero">
+					<nav class="navbar">
+						<h1 class="logo">Royal Luxury Hotel</h1>
+						<ul>
+							<a href="#Home">Home</a>	
+							<a href="#about">About</a>	
+							<a href="#rooms">Rooms</a>	
+							<a href="#contact">Contact</a>	
+						</ul>
+					</nav>
+					<div class="hero-content">
+						<h2>Welcome to Royal Luxury</h2>
+						<p>Experience luxury like never before</p>
+						<a href="#rooms" class="book-btn">Book Now</a>
+					</div>
+				</header>
+
+				<section id="about" class="section">
+					<h2>About Us</h2>
+					<p>Royal luxury is premium 5-star hotel offering world-class hospitality, scenic view, and unforgettable comfort.</p>
+				</section>
+				
+				<section id="rooms" class="section rooms">
+					<h2>Our Rooms</h2>
+					<div class="room-list">
+						<div class="room">
+							<img src="" alt="Deluxe Room">
+							<h3>Deluxe Room</h3>
+							<p>6,999 Rs.</p>
+						</div>
+						<div class="room">
+							<img src="" alt="Suite Room">
+							<h3>Presidential Suite</h3>
+							<p>12,999 / night</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="contact" class="section content">
+					<h2>Contact Us</h2>
+					<p>Email: info@royalluxuryhotel.com</p>
+					<p>Phone: +91-987654**10</p>
+				</section>
+
+				<footer>
+					<p>&copy; 2025 Royal Luxury Hotel. All rights reserved.</p>
+				</footer>
+</body>
+</html>
